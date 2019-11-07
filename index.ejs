@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WORLD NEWS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="logo-h" style="text-align: center;   margin-top: 20px;;  font-size: 80px;">WORLD NEWS</h1>
+     <a id="latest" href="#">LATEST NEWS</a><span id="day"></span> <a id="lates" href="#">TODAY'S PAPER</a>
+    <div class="topnav" >
+        <a  href="#home">HOME</a>
+        <a href="#news">NEWS</a>
+        <a href="#contact">BUSINESS</a>
+        <a href="#about">SPORTS</a>
+        <a href="#about">ENTERTAINMENT</a>
+        <a href="#about">CROSSWORD</a>
+        <a href="#about">CRICKET</a>
+        <a href="#about">OPINION</a>
+      </div>
+    <marquee>* Pak will take Manmohan Singh to Gurudwara in an open car  *        Gurmeet Ram Rahim's special honeypreet comes out of jail     *      Champions League: Juventus, Bayern Munich, PSG Book Last-16 Berths, Manchester City Made To WaitEuropa League: Vitoria Guimaraes Hold Arsenal To 1-1 Draw At Home     *</marquee>
+     <span id="headl">HEADLINE</span>
+      <a href="#"> <img id="ad" src="im.jpg" alt=""></a>
+      <a href="#"> <img id="ad2" src="ad.webp" alt=""></a>
+      <span id="bitt">Peter Thiels VC Found Invests Million Into Bitcoin,Market Reacts</span>
+       <span id="samsu">Samsung wants to sell more foldable phones next year</span>
+      <a href="#"><img id="bit" src="bitb.jpg" alt=""></a>
+      <a href="#"><img id="san" src="san.webp" alt=""></a>
+      <a href="#"><img id="red" src="red.webp" alt=""></a>
+      <a href="#"><img id="gog" src="gog.webp" alt=""></a>
+
+      <a href="#"><img id="vivo" src="vivo.webp" alt=""></a>
+      <span id="vtext">Vivo dominates AnTuTu performance list in October 2019</span>
+      <span id="vtextt"> *      WhatsApp Business gets Catalog feature in India: You can showcase your products, features and more</span>
+     <span id="vtextttt">*      This broadband provider has exact plans as Jio but it offers double data limit</span>
+      <a href="#"><img id="ios" src="ios.webp" alt=""></a>
+      <span id="iphtext">iPhone, iPad users complain iOS 13.2 is killing background apps, tasks frequently
+       </span>
+       <span id="isott">*        First generation Pixel phones will get their last update in December</span>
+      <span id="isottt">*        Asus 6z starts getting Android 10 update: Lots of new features on offer</span>
+       <a href="#"><img id="and" src="and.webp" alt=""></a>
+      <span id="andtext">Google improves Pixel 4's Smooth Display feature with November security update</span>
+      <span id="andtt">*          iOS 13.2 out for iPhones, brings Deep Fusion, AirPods Pro support and more</span>
+      <span id="andttt">*         Are you an iPhone 5 user? Update to iOS 10.3.4 immediately</span>
+     
+     <section id="subscribe">
+<h1>Subscribe to our Newsletter</h1>
+<p>Subscribe to our Newsletter to get updated and be a premium member. </p>
+<form action="/sub" method="POST">
+    <label style="font-size: 23px;">Name</label>&nbsp;&nbsp;<input placeholder="Name" style="width: 300px;height: 20px;" type="text" name="name" id=""><br>
+    <label  style="font-size: 23px;">Email</label>&nbsp;&nbsp;<input placeholder="Email" style="width: 300px;height: 20px;" type="email" name="email" id=""><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="padding:5px 20px;width:300px;" type="submit" name="submit" id=" " value="Subscribe"> 
+</form>
+     </section>
+     
+
+     <div id="contact">
+         <h1>CONTACT FORM</h1>
+         <form action="/cont" method="POST">
+         <label style="font-size: 23px;">Name</label><input style="width: 300px;height: 20px;" type="text" name="name"><br>
+         <label style="font-size: 23px;">Email</label> <input style="width: 300px;height: 20px;" type="email" name="email"><br>
+         <label style="font-size: 23px;">Phone</label><input  style="width: 300px;height: 20px;" type="phone" name="phone" id=""><br>
+         &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input  style="padding:5px 20px;width:300px;"  type="submit" name="submit" id="">
+         </form>
+     </div>
+     <footer>
+<span id="foot"> WORLD NEWS</span><br>
+<span id="copy">Copyright © 2019 Bennett, Coleman & Co. Ltd. All rights reserved. For reprint rights: </span>
+     </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+           
+              var d = new Date();
+              var dat=d.getDate();
+              var yer=d.getFullYear();
+              var weekday = new Array(7);
+              weekday[0] = "Sunday";
+              weekday[1] = "Monday";
+              weekday[2] = "Tuesday";
+              weekday[3] = "Wednesday";
+              weekday[4] = "Thursday";
+              weekday[5] = "Friday";
+              weekday[6] = "Saturday";
+            
+              var n = weekday[d.getDay()];
+              document.getElementById("day").innerHTML = n+","+dat+","+yer;
+        
+            </script>
+</body>
+</html>
